@@ -92,7 +92,7 @@ class Bowl:
 if __name__ == "__main__":
     
 	bowl = Bowl(100)
-	waiter.append(threading.Semaphore(1))
+	waiter.append(threading.Semaphore(3))
     # Create philosophers and forks
 	for i in range(0, numPhilosophers):
 		philosophers.append(Philosopher(i))
